@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    padding-bottom: 5px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#name {
+    display: flex;
+    color: black;
+}
+
+#bookhive-title {
+    color: black;
+    font: bold;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#div1 {
+    width: auto;
+    color: rgb(38, 31, 27);
+    display: flex;
+    padding-top: 10px;
+    background-color: #f4d097;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0 20px;
+}
+
+.panel {
+    padding: 10px;
+    height: 30px;
+    background-color: #16383a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.panelall {
+    color: rgb(254, 217, 124)!important;
+}
+
+.panelops p {
+    padding: 10px;
+    display: inline;
+    margin-left: 15px;
+    color: rgb(254, 217, 124)!important;
+}
+
+.panelops {
+    width: 70%;
+    font-size: 0.95rem;
+}
+
+#textb {
+    display: flex;
+    padding-right: 10px;
+}
+
+#butn {
+    height: 20px;
+    width: 50px;
+    background-color: #e28743;
+    border: rgb(62, 39, 10);
+    color: black;
+    padding: 0px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#butn:hover {
+    opacity: 1;
+}
+
+.textb
+{
+    display: flex;
+    align-items: center;
+}
+
+#plc
+{
+
+    height: 20px;
+}
+
+.deals {
+    padding: 2px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(254, 217, 124)!important;
+}
+
+.herosec {
+    background-color: #cacbc153;
+    background-image: url("sale.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.heromsg {
+    background-color: #ddddddbb;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 23px;
+    padding-left: 200px;
+}
+
+.heromsg a {
+    color: #007185;
+}
+
+.shop {
+    padding: 15px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ddddddbb;
+}
+
+.box h2 {
+    font-size: 21px;
+    line-height: 1em;
+    margin: 0 0 20px 0;
+}
+
+.box {
+    height: 400px;
+    width: 20%;
+    background-color: #f5b06a50;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 20px 10px 15px;
+    color: black;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.boxcon {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #222f3d;
+}
+
+.boxcon a {
+    color: #007185;
+}
+
+.boximg {
+    height: 320px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot-panel2 {
+    padding: 55px;
+    background-color: #567061;
+    display: flex;
+    font-size: small;
+    justify-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+#f2 {
+    padding: 35px;
+    color: #dddddd;
+    background-color: #213437;
+    text-align: center;
+}
+
+.f1 {
+    color: white;
+}
+
+.foot-panel2 a {
+    color: #dddddd;
+}
+
+.foot-panel2 ul {
+    padding: 20px;
+    list-style: none;
+}
+
+#end 
+{
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    #logo{
+        padding-left: 30px;
+    }
+
+    #div1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+        width: 659px;
+    }
+
+    .panelops{
+        font-size: 12px;
+    }
+
+    .herosec{
+        width: 677px;
+    }
+
+    .heromsg{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        /* justify-content: center; */
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        width: 600px;
+    }
+
+    #textb
+    {
+        padding-left: 50px;
+    }
+
+    .panel{
+        width: 660px;
+    }
+
+    .box {
+        width: 660px;
+        height: 720px;
+        margin-bottom: 10px;
+    }
+
+    .boximg
+    {
+        height: 650px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .heromsg {
+        width: 660px;
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+
+    .foot-panel2 {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        width: 660px;
+    }
+
+    #f2
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 660px;
+    }
+
+    .shop {
+        width: 675px;
+        display: flex;
+        flex-wrap: wrap; 
+        box-sizing: border-box;
+    }
+
+}
+
+
+
+
+/* ****************************************************************************************** */
+/* fiction ans other sub html sites */
+
+/* General Styling */
+#fb {
+    background-color: #d2ab4070;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#f1
+{
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 79px;
+}
+
+/* Book Card Styling */
+.b1 {
+    width: 200px;
+    perspective: 1000px; /* Enable 3D effect */
+    text-align: center;
+}
+
+.flip-card {
+    width: 100%;
+    height: 340px;
+    position: relative;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 314px;
+    -webkit-backface-visibility: hidden; /* -webkit- prefix is used for Safari and older browsers that require vendor prefixes for newer CSS properties */
+    backface-visibility: hidden; backface-visibility: hidden; /*ensures that when an element is rotated (using 3D transforms), its back face is not visible to the user */
+}
+
+.flip-card-front {
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.flip-card-back {
+    background-color: rgb(35, 112, 76);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* like buttons */
+.wrapper{
+    margin-top: 8px;
+}
+
+i{
+    padding-left: 14px;
+}
