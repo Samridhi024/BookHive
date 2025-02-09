@@ -1,0 +1,82 @@
+body
+{
+    background: #16383a;
+}
+
+.main
+{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    position: relative;
+}
+
+.box
+{
+    height: 300px;
+    width: 30%;
+    background-color: #e5b382;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    color: black;
+    border-radius: 30px;
+    position: relative; 
+    z-index: 1; 
+}
+
+.ph{
+    height: 30px;
+    width: 85%;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#b1{
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+#btn
+{
+    height: 50px;
+    width: 100px;
+    margin-top: 30px;
+    background-color: #ebd89a; 
+    border: none;
+    color: black;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+} 
+
+#btn:hover{
+    background-color: #dc9248;
+    opacity: 0.7;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.beeimg {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute; 
+    top: 80%; 
+    right: 24%;
+    transform: translateY(-50%); 
+    z-index: 2; 
+}
+
+#bee {
+    height: 230px;
+}
+
+@media screen and (max-width: 480px) {
+    .box{
+        margin-top: 50px;
+        width: 250px;
+        padding-left: 30px;
+    }
+}
